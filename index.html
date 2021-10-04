@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Teste - Letras</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-wrapper">
+        <h2>Digite o texto de entrata no input abaixo</h2>
+        <span
+          >Caso as palavras estejam duplicadas, elas aparecerão corrigidas no
+          campo "Saída"</span
+        >
+        <input
+          type="text"
+          id="input"
+          placeholder="Digite o texto aqui"
+          onkeydown="reset"
+        />
+        <button type="submit" onclick="getInputValue()">Verificar</button>
+      </div>
+
+      <div class="common-wrapper first">
+        <p>Texto digitado:</p>
+        <p id="entry"></p>
+      </div>
+
+      <h3 class="out">Saída:</h3>
+      <div class="common-wrapper">
+        <p id="output"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Desenvolvimento e Design:
+        <a
+          href="https://www.linkedin.com/in/andressa-duarte-3986584a/"
+          target="_blank"
+          >Andressa Duarte</a
+        >
+        - 2021
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
